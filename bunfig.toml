@@ -1,0 +1,29 @@
+[serve.static]
+plugins = ["bun-plugin-tailwind"]
+env = "BUN_PUBLIC_*"
+smol = false
+logLevel = "debug"
+telemetry = false
+[loader]
+".esx" = "tsx"
+
+[env]
+file = true
+
+[console]
+depth = 3
+
+[install]
+optional = true
+dev = true
+peer = true
+exact = false
+production = false
+
+[run]
+shell = "bun"
+bun = true
+
+
+
+[test]
